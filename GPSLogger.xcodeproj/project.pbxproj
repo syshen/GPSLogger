@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80CD749B15BA88EF00EC6F8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749A15BA88EF00EC6F8C /* UIKit.framework */; };
+		80CD749D15BA88EF00EC6F8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749C15BA88EF00EC6F8C /* Foundation.framework */; };
+		80CD749F15BA88EF00EC6F8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749E15BA88EF00EC6F8C /* CoreGraphics.framework */; };
+		80CD74A515BA88EF00EC6F8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80CD74A315BA88EF00EC6F8C /* InfoPlist.strings */; };
+		80CD74A715BA88EF00EC6F8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74A615BA88EF00EC6F8C /* main.m */; };
+		80CD74AB15BA88EF00EC6F8C /* SYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74AA15BA88EF00EC6F8C /* SYAppDelegate.m */; };
+		80CD74AE15BA88EF00EC6F8C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CD74AC15BA88EF00EC6F8C /* MainStoryboard.storyboard */; };
+		80CD74B115BA88EF00EC6F8C /* SYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74B015BA88EF00EC6F8C /* SYViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80CD749615BA88EF00EC6F8C /* GPSLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80CD749A15BA88EF00EC6F8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80CD749C15BA88EF00EC6F8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80CD749E15BA88EF00EC6F8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80CD74A215BA88EF00EC6F8C /* GPSLogger-Info.plist */ = {isa = PBXFileReference; path = "GPSLogger-Info.plist"; sourceTree = "<group>"; };
+		80CD74A415BA88EF00EC6F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80CD74A615BA88EF00EC6F8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80CD74A815BA88EF00EC6F8C /* GPSLogger-Prefix.pch */ = {isa = PBXFileReference; path = "GPSLogger-Prefix.pch"; sourceTree = "<group>"; };
+		80CD74A915BA88EF00EC6F8C /* SYAppDelegate.h */ = {isa = PBXFileReference; path = SYAppDelegate.h; sourceTree = "<group>"; };
+		80CD74AA15BA88EF00EC6F8C /* SYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAppDelegate.m; sourceTree = "<group>"; };
+		80CD74AD15BA88EF00EC6F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		80CD74AF15BA88EF00EC6F8C /* SYViewController.h */ = {isa = PBXFileReference; path = SYViewController.h; sourceTree = "<group>"; };
+		80CD74B015BA88EF00EC6F8C /* SYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80CD749315BA88EF00EC6F8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80CD749B15BA88EF00EC6F8C /* UIKit.framework in Frameworks */,
+				80CD749D15BA88EF00EC6F8C /* Foundation.framework in Frameworks */,
+				80CD749F15BA88EF00EC6F8C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80CD748B15BA88EF00EC6F8C = {
+			isa = PBXGroup;
+			children = (
+				80CD74A015BA88EF00EC6F8C /* GPSLogger */,
+				80CD749915BA88EF00EC6F8C /* Frameworks */,
+				80CD749715BA88EF00EC6F8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80CD749715BA88EF00EC6F8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80CD749615BA88EF00EC6F8C /* GPSLogger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80CD749915BA88EF00EC6F8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80CD749A15BA88EF00EC6F8C /* UIKit.framework */,
+				80CD749C15BA88EF00EC6F8C /* Foundation.framework */,
+				80CD749E15BA88EF00EC6F8C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80CD74A015BA88EF00EC6F8C /* GPSLogger */ = {
+			isa = PBXGroup;
+			children = (
+				80CD74A915BA88EF00EC6F8C /* SYAppDelegate.h */,
+				80CD74AA15BA88EF00EC6F8C /* SYAppDelegate.m */,
+				80CD74AC15BA88EF00EC6F8C /* MainStoryboard.storyboard */,
+				80CD74AF15BA88EF00EC6F8C /* SYViewController.h */,
+				80CD74B015BA88EF00EC6F8C /* SYViewController.m */,
+				80CD74A115BA88EF00EC6F8C /* Supporting Files */,
+			);
+			path = GPSLogger;
+			sourceTree = "<group>";
+		};
+		80CD74A115BA88EF00EC6F8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80CD74A215BA88EF00EC6F8C /* GPSLogger-Info.plist */,
+				80CD74A315BA88EF00EC6F8C /* InfoPlist.strings */,
+				80CD74A615BA88EF00EC6F8C /* main.m */,
+				80CD74A815BA88EF00EC6F8C /* GPSLogger-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80CD749515BA88EF00EC6F8C /* GPSLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80CD74B415BA88EF00EC6F8C /* Build configuration list for PBXNativeTarget "GPSLogger" */;
+			buildPhases = (
+				80CD749215BA88EF00EC6F8C /* Sources */,
+				80CD749315BA88EF00EC6F8C /* Frameworks */,
+				80CD749415BA88EF00EC6F8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSLogger;
+			productName = GPSLogger;
+			productReference = 80CD749615BA88EF00EC6F8C /* GPSLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80CD748D15BA88EF00EC6F8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SY;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Waveface Inc.";
+			};
+			buildConfigurationList = 80CD749015BA88EF00EC6F8C /* Build configuration list for PBXProject "GPSLogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80CD748B15BA88EF00EC6F8C;
+			productRefGroup = 80CD749715BA88EF00EC6F8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80CD749515BA88EF00EC6F8C /* GPSLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80CD749415BA88EF00EC6F8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80CD74A515BA88EF00EC6F8C /* InfoPlist.strings in Resources */,
+				80CD74AE15BA88EF00EC6F8C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80CD749215BA88EF00EC6F8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80CD74A715BA88EF00EC6F8C /* main.m in Sources */,
+				80CD74AB15BA88EF00EC6F8C /* SYAppDelegate.m in Sources */,
+				80CD74B115BA88EF00EC6F8C /* SYViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80CD74A315BA88EF00EC6F8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80CD74A415BA88EF00EC6F8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80CD74AC15BA88EF00EC6F8C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80CD74AD15BA88EF00EC6F8C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80CD74B215BA88EF00EC6F8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80CD74B315BA88EF00EC6F8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80CD74B515BA88EF00EC6F8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSLogger/GPSLogger-Prefix.pch";
+				INFOPLIST_FILE = "GPSLogger/GPSLogger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80CD74B615BA88EF00EC6F8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSLogger/GPSLogger-Prefix.pch";
+				INFOPLIST_FILE = "GPSLogger/GPSLogger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80CD749015BA88EF00EC6F8C /* Build configuration list for PBXProject "GPSLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80CD74B215BA88EF00EC6F8C /* Debug */,
+				80CD74B315BA88EF00EC6F8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80CD74B415BA88EF00EC6F8C /* Build configuration list for PBXNativeTarget "GPSLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80CD74B515BA88EF00EC6F8C /* Debug */,
+				80CD74B615BA88EF00EC6F8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80CD748D15BA88EF00EC6F8C /* Project object */;
+}
