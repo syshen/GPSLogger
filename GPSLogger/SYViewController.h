@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface SYViewController : UIViewController
+@interface SYViewController : UITableViewController <CLLocationManagerDelegate, NSFetchedResultsControllerDelegate>
+
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext; 
 
 @end

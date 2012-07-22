@@ -15,6 +15,10 @@
 		80CD74AB15BA88EF00EC6F8C /* SYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74AA15BA88EF00EC6F8C /* SYAppDelegate.m */; };
 		80CD74AE15BA88EF00EC6F8C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CD74AC15BA88EF00EC6F8C /* MainStoryboard.storyboard */; };
 		80CD74B115BA88EF00EC6F8C /* SYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74B015BA88EF00EC6F8C /* SYViewController.m */; };
+		80CD74B915BAA03C00EC6F8C /* GPSLogger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74B715BAA03C00EC6F8C /* GPSLogger.xcdatamodeld */; };
+		80CD74BC15BAA0FE00EC6F8C /* Locations.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74BB15BAA0FE00EC6F8C /* Locations.m */; };
+		80CD74BE15BAA38A00EC6F8C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD74BD15BAA38A00EC6F8C /* CoreData.framework */; };
+		80CD74C015BAA39300EC6F8C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD74BF15BAA39300EC6F8C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +26,20 @@
 		80CD749A15BA88EF00EC6F8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		80CD749C15BA88EF00EC6F8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80CD749E15BA88EF00EC6F8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		80CD74A215BA88EF00EC6F8C /* GPSLogger-Info.plist */ = {isa = PBXFileReference; path = "GPSLogger-Info.plist"; sourceTree = "<group>"; };
+		80CD74A215BA88EF00EC6F8C /* GPSLogger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSLogger-Info.plist"; sourceTree = "<group>"; };
 		80CD74A415BA88EF00EC6F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80CD74A615BA88EF00EC6F8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		80CD74A815BA88EF00EC6F8C /* GPSLogger-Prefix.pch */ = {isa = PBXFileReference; path = "GPSLogger-Prefix.pch"; sourceTree = "<group>"; };
-		80CD74A915BA88EF00EC6F8C /* SYAppDelegate.h */ = {isa = PBXFileReference; path = SYAppDelegate.h; sourceTree = "<group>"; };
+		80CD74A815BA88EF00EC6F8C /* GPSLogger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPSLogger-Prefix.pch"; sourceTree = "<group>"; };
+		80CD74A915BA88EF00EC6F8C /* SYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAppDelegate.h; sourceTree = "<group>"; };
 		80CD74AA15BA88EF00EC6F8C /* SYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAppDelegate.m; sourceTree = "<group>"; };
 		80CD74AD15BA88EF00EC6F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		80CD74AF15BA88EF00EC6F8C /* SYViewController.h */ = {isa = PBXFileReference; path = SYViewController.h; sourceTree = "<group>"; };
+		80CD74AF15BA88EF00EC6F8C /* SYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYViewController.h; sourceTree = "<group>"; };
 		80CD74B015BA88EF00EC6F8C /* SYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYViewController.m; sourceTree = "<group>"; };
+		80CD74B815BAA03C00EC6F8C /* GPSLogger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GPSLogger.xcdatamodel; sourceTree = "<group>"; };
+		80CD74BA15BAA0FE00EC6F8C /* Locations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locations.h; sourceTree = "<group>"; };
+		80CD74BB15BAA0FE00EC6F8C /* Locations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locations.m; sourceTree = "<group>"; };
+		80CD74BD15BAA38A00EC6F8C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		80CD74BF15BAA39300EC6F8C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CD74C015BAA39300EC6F8C /* CoreLocation.framework in Frameworks */,
+				80CD74BE15BAA38A00EC6F8C /* CoreData.framework in Frameworks */,
 				80CD749B15BA88EF00EC6F8C /* UIKit.framework in Frameworks */,
 				80CD749D15BA88EF00EC6F8C /* Foundation.framework in Frameworks */,
 				80CD749F15BA88EF00EC6F8C /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +61,8 @@
 		80CD748B15BA88EF00EC6F8C = {
 			isa = PBXGroup;
 			children = (
+				80CD74BF15BAA39300EC6F8C /* CoreLocation.framework */,
+				80CD74BD15BAA38A00EC6F8C /* CoreData.framework */,
 				80CD74A015BA88EF00EC6F8C /* GPSLogger */,
 				80CD749915BA88EF00EC6F8C /* Frameworks */,
 				80CD749715BA88EF00EC6F8C /* Products */,
@@ -83,6 +96,9 @@
 				80CD74AF15BA88EF00EC6F8C /* SYViewController.h */,
 				80CD74B015BA88EF00EC6F8C /* SYViewController.m */,
 				80CD74A115BA88EF00EC6F8C /* Supporting Files */,
+				80CD74B715BAA03C00EC6F8C /* GPSLogger.xcdatamodeld */,
+				80CD74BA15BAA0FE00EC6F8C /* Locations.h */,
+				80CD74BB15BAA0FE00EC6F8C /* Locations.m */,
 			);
 			path = GPSLogger;
 			sourceTree = "<group>";
@@ -165,6 +181,8 @@
 				80CD74A715BA88EF00EC6F8C /* main.m in Sources */,
 				80CD74AB15BA88EF00EC6F8C /* SYAppDelegate.m in Sources */,
 				80CD74B115BA88EF00EC6F8C /* SYViewController.m in Sources */,
+				80CD74B915BAA03C00EC6F8C /* GPSLogger.xcdatamodeld in Sources */,
+				80CD74BC15BAA0FE00EC6F8C /* Locations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +294,22 @@
 				80CD74B615BA88EF00EC6F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80CD74B715BAA03C00EC6F8C /* GPSLogger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80CD74B815BAA03C00EC6F8C /* GPSLogger.xcdatamodel */,
+			);
+			currentVersion = 80CD74B815BAA03C00EC6F8C /* GPSLogger.xcdatamodel */;
+			path = GPSLogger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 80CD748D15BA88EF00EC6F8C /* Project object */;
 }
