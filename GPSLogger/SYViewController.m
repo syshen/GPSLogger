@@ -7,6 +7,7 @@
 //
 
 #import "SYViewController.h"
+#import "SYMapViewController.h"
 #import "Locations.h"
 
 @interface SYViewController ()
@@ -27,6 +28,7 @@
 {
     [super viewDidLoad];
     self.navigationItem.rightBarButtonItem.enabled = NO;
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
         
     NSError *error = nil;
     if (![self.fetchedResultsController performFetch:&error]) {
@@ -42,7 +44,7 @@
     // Release any retained subviews of the main view.
 }
 
-#pragma makr - UITableViewControllerDelegate
+#pragma mark - UITableViewControllerDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return [[self.fetchedResultsController sections] count];
@@ -82,6 +84,19 @@
 
     cell.detailTextLabel.text = string;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSManagedObject *toDel = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        [self.fetchedResultsController.managedObjectContext deleteObject:toDel];
+        
+        NSError *error = nil;
+        if (![self.fetchedResultsController.managedObjectContext save:&error]) {
+            NSLog(@"Failed to delete data: %@", error);
+        }
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -180,7 +195,7 @@
         return _locationManager;
     
     _locationManager = [[CLLocationManager alloc] init];
-    _locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
     _locationManager.delegate = self;
 
     return _locationManager;
@@ -194,5 +209,17 @@
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
     self.navigationItem.rightBarButtonItem.enabled = NO;
+}
+
+#pragma mark - Segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"gotoMapView"]) {
+        SYMapViewController *mapViewController = (SYMapViewController*)[segue destinationViewController];
+        NSIndexPath *idxPath = [self.tableView indexPathForSelectedRow];
+        Locations *loc = [_fetchedResultsController objectAtIndexPath:idxPath];
+        mapViewController.latitude = [loc latitude];
+        mapViewController.longtitude = [loc longtitude];
+    }
 }
 @end
