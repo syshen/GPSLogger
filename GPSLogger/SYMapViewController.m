@@ -35,8 +35,8 @@
     region.center.latitude = [latitude doubleValue];
     region.center.longitude = [longtitude doubleValue];
     MKCoordinateSpan span;
-    span.latitudeDelta = .005;
-    span.longitudeDelta = .005;
+    span.latitudeDelta = .002;
+    span.longitudeDelta = .002;
     region.span = span;
     [self.mapView setRegion:region];
 }
@@ -46,7 +46,6 @@
     [super viewDidLoad];
     
     [self setLocationCenter:self.latitude andWithLongtitude:self.longtitude];
-	// Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload

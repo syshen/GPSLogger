@@ -104,10 +104,10 @@
 				80D7778915BBE643007601B5 /* SYMapViewController.m */,
 				80CD74AF15BA88EF00EC6F8C /* SYViewController.h */,
 				80CD74B015BA88EF00EC6F8C /* SYViewController.m */,
-				80CD74A115BA88EF00EC6F8C /* Supporting Files */,
 				80CD74B715BAA03C00EC6F8C /* GPSLogger.xcdatamodeld */,
 				80CD74BA15BAA0FE00EC6F8C /* Locations.h */,
 				80CD74BB15BAA0FE00EC6F8C /* Locations.m */,
+				80CD74A115BA88EF00EC6F8C /* Supporting Files */,
 			);
 			path = GPSLogger;
 			sourceTree = "<group>";
