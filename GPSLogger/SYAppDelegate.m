@@ -7,7 +7,7 @@
 //
 
 #import "SYAppDelegate.h"
-#import "SYViewController.h"
+#import "SYMainViewController.h"
 
 @implementation SYAppDelegate
 
@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     UINavigationController *mainViewController = (UINavigationController*) self.window.rootViewController;
-    SYViewController *syControl = (SYViewController*) mainViewController.topViewController;
+    SYMainViewController *syControl = (SYMainViewController*) mainViewController.topViewController;
     syControl.managedObjectContext = self.managedObjectContext;
     return YES;
 }

@@ -11,7 +11,7 @@
 
 @interface SYMapViewController ()
 
-@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
