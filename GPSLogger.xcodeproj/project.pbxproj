@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		806676E015BD877E005CB7E9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 806676DF15BD877E005CB7E9 /* README.md */; };
 		809F414B15BC0522000225D4 /* SYLocationSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809F414A15BC0522000225D4 /* SYLocationSelectionViewController.m */; };
 		80CD749B15BA88EF00EC6F8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749A15BA88EF00EC6F8C /* UIKit.framework */; };
 		80CD749D15BA88EF00EC6F8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749C15BA88EF00EC6F8C /* Foundation.framework */; };
@@ -26,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		806676DF15BD877E005CB7E9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		809F414915BC0522000225D4 /* SYLocationSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYLocationSelectionViewController.h; sourceTree = "<group>"; };
 		809F414A15BC0522000225D4 /* SYLocationSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYLocationSelectionViewController.m; sourceTree = "<group>"; };
 		80CD749615BA88EF00EC6F8C /* GPSLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +109,6 @@
 				80D7778915BBE643007601B5 /* SYMapViewController.m */,
 				80CD74AF15BA88EF00EC6F8C /* SYMainViewController.h */,
 				80CD74B015BA88EF00EC6F8C /* SYMainViewController.m */,
-				806676DF15BD877E005CB7E9 /* README.md */,
 				80CD74B715BAA03C00EC6F8C /* GPSLogger.xcdatamodeld */,
 				80CD74BA15BAA0FE00EC6F8C /* Locations.h */,
 				80CD74BB15BAA0FE00EC6F8C /* Locations.m */,
@@ -185,7 +182,6 @@
 			files = (
 				80CD74A515BA88EF00EC6F8C /* InfoPlist.strings in Resources */,
 				80CD74AE15BA88EF00EC6F8C /* MainStoryboard.storyboard in Resources */,
-				806676E015BD877E005CB7E9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
