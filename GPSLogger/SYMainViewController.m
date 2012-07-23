@@ -119,7 +119,6 @@
     [newLoc setName:name];
     [newLoc setCreationDate:[NSDate date]];
     
-    NSLog(@"save a new location");
     NSError *error = nil;
     
     if (![objContext save:&error]) {
@@ -227,7 +226,7 @@
         
         CLLocation *location = [self.locationManager location];
         CLLocationCoordinate2D coord = [location coordinate];
-        NSLog(@"%f", coord.latitude);
+
         locViewController.latitude = [NSNumber numberWithDouble:coord.latitude];
         locViewController.longtitude = [NSNumber numberWithDouble:coord.longitude];
     }
