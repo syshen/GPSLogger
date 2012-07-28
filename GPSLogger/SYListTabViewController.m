@@ -10,6 +10,7 @@
 #import "SYLocationMapController.h"
 #import "SYLocationEditorController.h"
 #import "Locations.h"
+#import "SYDataStore.h"
 
 @interface SYListTabViewController ()
 
@@ -17,10 +18,13 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+
 @end
 
 @implementation SYListTabViewController
-@synthesize managedObjectContext;
+@synthesize managedObjectContext = _managedObjectContext;
 @synthesize eventsArray = _eventsArray;
 @synthesize locationManager = _locationManager;
 @synthesize fetchedResultsController = _fetchedResultsController;
@@ -43,6 +47,11 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+}
+
+- (NSManagedObjectContext *) managedObjectContext
+{
+    return [[SYDataStore defaultStore] context];
 }
 
 #pragma mark - UITableViewControllerDelegate
@@ -134,7 +143,7 @@
     
     
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Locations" inManagedObjectContext:managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Locations" inManagedObjectContext:[self managedObjectContext]];
     [request setEntity:entity];
     
     NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"creationDate" ascending:NO];
@@ -143,7 +152,7 @@
 
     [request setFetchBatchSize:10];
 
-    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:@"Locations"];
+    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:[self managedObjectContext] sectionNameKeyPath:nil cacheName:@"Locations"];
     
     _fetchedResultsController.delegate = self;
     return _fetchedResultsController;

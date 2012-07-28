@@ -12,8 +12,6 @@
 
 @interface SYListTabViewController : UITableViewController <CLLocationManagerDelegate, NSFetchedResultsControllerDelegate>
 
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext; 
-
 - (void)addANewLocation:(CLLocation*)location withName:(NSString *)name;
 
 @end

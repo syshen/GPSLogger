@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		809F414B15BC0522000225D4 /* SYLocationEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809F414A15BC0522000225D4 /* SYLocationEditorController.m */; };
+		80B59C4F15C3D4FE00600014 /* SYDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B59C4E15C3D4FE00600014 /* SYDataStore.m */; };
+		80B59C5315C3FB1600600014 /* SYAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B59C5215C3FB1600600014 /* SYAnnotation.m */; };
+		80B59C5615C3FCE600600014 /* SYAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B59C5515C3FCE600600014 /* SYAnnotationView.m */; };
+		80B59C5B15C40C6300600014 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 80B59C5915C40C6300600014 /* pin.png */; };
+		80B59C5C15C40C6300600014 /* pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80B59C5A15C40C6300600014 /* pin@2x.png */; };
+		80B59C6215C41D8800600014 /* SYDataStore+MapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B59C6115C41D8800600014 /* SYDataStore+MapHelper.m */; };
 		80CD749B15BA88EF00EC6F8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749A15BA88EF00EC6F8C /* UIKit.framework */; };
 		80CD749D15BA88EF00EC6F8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749C15BA88EF00EC6F8C /* Foundation.framework */; };
 		80CD749F15BA88EF00EC6F8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749E15BA88EF00EC6F8C /* CoreGraphics.framework */; };
@@ -32,6 +38,16 @@
 /* Begin PBXFileReference section */
 		809F414915BC0522000225D4 /* SYLocationEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYLocationEditorController.h; sourceTree = "<group>"; };
 		809F414A15BC0522000225D4 /* SYLocationEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYLocationEditorController.m; sourceTree = "<group>"; };
+		80B59C4D15C3D4FE00600014 /* SYDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDataStore.h; sourceTree = "<group>"; };
+		80B59C4E15C3D4FE00600014 /* SYDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYDataStore.m; sourceTree = "<group>"; };
+		80B59C5115C3FB1600600014 /* SYAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAnnotation.h; sourceTree = "<group>"; };
+		80B59C5215C3FB1600600014 /* SYAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAnnotation.m; sourceTree = "<group>"; };
+		80B59C5415C3FCE600600014 /* SYAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAnnotationView.h; sourceTree = "<group>"; };
+		80B59C5515C3FCE600600014 /* SYAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAnnotationView.m; sourceTree = "<group>"; };
+		80B59C5915C40C6300600014 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		80B59C5A15C40C6300600014 /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin@2x.png"; sourceTree = "<group>"; };
+		80B59C6015C41D8800600014 /* SYDataStore+MapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SYDataStore+MapHelper.h"; sourceTree = "<group>"; };
+		80B59C6115C41D8800600014 /* SYDataStore+MapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SYDataStore+MapHelper.m"; sourceTree = "<group>"; };
 		80CD749615BA88EF00EC6F8C /* GPSLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CD749A15BA88EF00EC6F8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		80CD749C15BA88EF00EC6F8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +130,10 @@
 			children = (
 				80CD74A915BA88EF00EC6F8C /* SYAppDelegate.h */,
 				80CD74AA15BA88EF00EC6F8C /* SYAppDelegate.m */,
+				80B59C4D15C3D4FE00600014 /* SYDataStore.h */,
+				80B59C4E15C3D4FE00600014 /* SYDataStore.m */,
+				80B59C6015C41D8800600014 /* SYDataStore+MapHelper.h */,
+				80B59C6115C41D8800600014 /* SYDataStore+MapHelper.m */,
 				80CD74AC15BA88EF00EC6F8C /* MainStoryboard.storyboard */,
 				809F414915BC0522000225D4 /* SYLocationEditorController.h */,
 				809F414A15BC0522000225D4 /* SYLocationEditorController.m */,
@@ -123,6 +143,10 @@
 				80CD74B015BA88EF00EC6F8C /* SYListTabViewController.m */,
 				80EE544E15C3C51B00BA99CC /* SYMapTabViewController.h */,
 				80EE544F15C3C51B00BA99CC /* SYMapTabViewController.m */,
+				80B59C5115C3FB1600600014 /* SYAnnotation.h */,
+				80B59C5215C3FB1600600014 /* SYAnnotation.m */,
+				80B59C5415C3FCE600600014 /* SYAnnotationView.h */,
+				80B59C5515C3FCE600600014 /* SYAnnotationView.m */,
 				80CD74B715BAA03C00EC6F8C /* GPSLogger.xcdatamodeld */,
 				80CD74BA15BAA0FE00EC6F8C /* Locations.h */,
 				80CD74BB15BAA0FE00EC6F8C /* Locations.m */,
@@ -145,6 +169,8 @@
 		80EE54B115C3C7C000BA99CC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				80B59C5915C40C6300600014 /* pin.png */,
+				80B59C5A15C40C6300600014 /* pin@2x.png */,
 				80EE54B615C3C91400BA99CC /* list.png */,
 				80EE54B715C3C91400BA99CC /* list@2x.png */,
 				80EE54B215C3C7D500BA99CC /* map.png */,
@@ -211,6 +237,8 @@
 				80EE54B515C3C7D500BA99CC /* map@2x.png in Resources */,
 				80EE54B815C3C91400BA99CC /* list.png in Resources */,
 				80EE54B915C3C91400BA99CC /* list@2x.png in Resources */,
+				80B59C5B15C40C6300600014 /* pin.png in Resources */,
+				80B59C5C15C40C6300600014 /* pin@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +257,10 @@
 				80D7778A15BBE643007601B5 /* SYLocationMapController.m in Sources */,
 				809F414B15BC0522000225D4 /* SYLocationEditorController.m in Sources */,
 				80EE545015C3C51B00BA99CC /* SYMapTabViewController.m in Sources */,
+				80B59C4F15C3D4FE00600014 /* SYDataStore.m in Sources */,
+				80B59C5315C3FB1600600014 /* SYAnnotation.m in Sources */,
+				80B59C5615C3FCE600600014 /* SYAnnotationView.m in Sources */,
+				80B59C6215C41D8800600014 /* SYDataStore+MapHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
