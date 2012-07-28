@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface SYMainViewController : UITableViewController <CLLocationManagerDelegate, NSFetchedResultsControllerDelegate>
+@interface SYListTabViewController : UITableViewController <CLLocationManagerDelegate, NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext; 
 

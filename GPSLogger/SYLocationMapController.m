@@ -6,16 +6,16 @@
 //  Copyright (c) 2012 Waveface Inc. All rights reserved.
 //
 
-#import "SYMapViewController.h"
+#import "SYLocationMapController.h"
 #import <MapKit/MapKit.h>
 
-@interface SYMapViewController ()
+@interface SYLocationMapController ()
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
-@implementation SYMapViewController
+@implementation SYLocationMapController
 @synthesize mapView = _mapView;
 @synthesize latitude = _latitude;
 @synthesize longtitude = _longtitude;

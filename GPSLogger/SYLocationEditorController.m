@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 Waveface Inc. All rights reserved.
 //
 
-#import "SYLocationSelectionViewController.h"
+#import "SYLocationEditorController.h"
 #import <MapKit/MapKit.h>
-#import "SYMainViewController.h"
+#import "SYListTabViewController.h"
 
-@interface SYLocationSelectionViewController ()
+@interface SYLocationEditorController ()
 
 @property (strong, nonatomic) NSMutableArray *placeNames;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation SYLocationSelectionViewController
+@implementation SYLocationEditorController
 @synthesize mapView = _mapView;
 @synthesize tableView = _tableView;
 @synthesize actIndicatorView = _actIndicatorView;
@@ -127,11 +127,11 @@ static NSString *kGoogleAPIKey = @"AIzaSyBhIVUcucpsBPyHvJYu-e29Pewpj953dWM";
 {
     NSString *name = [self.placeNames objectAtIndex:[indexPath row]];
     CLLocation *loc = [[CLLocation alloc] initWithLatitude:[self.latitude doubleValue] longitude:[self.longtitude doubleValue]];
-    SYMainViewController *mainVC;
+    SYListTabViewController *mainVC;
     
     for (UIViewController *vc in self.navigationController.viewControllers) {
-        if ([vc isKindOfClass:[SYMainViewController class]]) {
-            mainVC = (SYMainViewController *)vc;
+        if ([vc isKindOfClass:[SYListTabViewController class]]) {
+            mainVC = (SYListTabViewController *)vc;
             break;
         }
     }

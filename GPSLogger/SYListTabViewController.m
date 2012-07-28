@@ -6,12 +6,12 @@
 //  Copyright (c) 2012 Waveface Inc. All rights reserved.
 //
 
-#import "SYMainViewController.h"
-#import "SYMapViewController.h"
-#import "SYLocationSelectionViewController.h"
+#import "SYListTabViewController.h"
+#import "SYLocationMapController.h"
+#import "SYLocationEditorController.h"
 #import "Locations.h"
 
-@interface SYMainViewController ()
+@interface SYListTabViewController ()
 
 @property (strong, nonatomic) NSMutableArray *eventsArray;
 @property (strong, nonatomic) CLLocationManager *locationManager;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation SYMainViewController
+@implementation SYListTabViewController
 @synthesize managedObjectContext;
 @synthesize eventsArray = _eventsArray;
 @synthesize locationManager = _locationManager;
@@ -215,14 +215,14 @@
 {
 
     if ([[segue identifier] isEqualToString:@"gotoMapView"]) {
-        SYMapViewController *mapViewController = (SYMapViewController*)[segue destinationViewController];
+        SYLocationMapController *mapViewController = (SYLocationMapController*)[segue destinationViewController];
         NSIndexPath *idxPath = [self.tableView indexPathForSelectedRow];
         Locations *loc = [_fetchedResultsController objectAtIndexPath:idxPath];
 
         mapViewController.latitude = [loc latitude];
         mapViewController.longtitude = [loc longtitude];
     } else if ([[segue identifier] isEqualToString:@"gotoLocationSelection"]) {
-        SYLocationSelectionViewController *locViewController = (SYLocationSelectionViewController*)[segue destinationViewController];
+        SYLocationEditorController *locViewController = (SYLocationEditorController*)[segue destinationViewController];
         
         CLLocation *location = [self.locationManager location];
         CLLocationCoordinate2D coord = [location coordinate];

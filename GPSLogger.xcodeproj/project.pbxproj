@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		809F414B15BC0522000225D4 /* SYLocationSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809F414A15BC0522000225D4 /* SYLocationSelectionViewController.m */; };
+		809F414B15BC0522000225D4 /* SYLocationEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809F414A15BC0522000225D4 /* SYLocationEditorController.m */; };
 		80CD749B15BA88EF00EC6F8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749A15BA88EF00EC6F8C /* UIKit.framework */; };
 		80CD749D15BA88EF00EC6F8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749C15BA88EF00EC6F8C /* Foundation.framework */; };
 		80CD749F15BA88EF00EC6F8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD749E15BA88EF00EC6F8C /* CoreGraphics.framework */; };
@@ -15,18 +15,23 @@
 		80CD74A715BA88EF00EC6F8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74A615BA88EF00EC6F8C /* main.m */; };
 		80CD74AB15BA88EF00EC6F8C /* SYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74AA15BA88EF00EC6F8C /* SYAppDelegate.m */; };
 		80CD74AE15BA88EF00EC6F8C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CD74AC15BA88EF00EC6F8C /* MainStoryboard.storyboard */; };
-		80CD74B115BA88EF00EC6F8C /* SYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74B015BA88EF00EC6F8C /* SYMainViewController.m */; };
+		80CD74B115BA88EF00EC6F8C /* SYListTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74B015BA88EF00EC6F8C /* SYListTabViewController.m */; };
 		80CD74B915BAA03C00EC6F8C /* GPSLogger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74B715BAA03C00EC6F8C /* GPSLogger.xcdatamodeld */; };
 		80CD74BC15BAA0FE00EC6F8C /* Locations.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD74BB15BAA0FE00EC6F8C /* Locations.m */; };
 		80CD74BE15BAA38A00EC6F8C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD74BD15BAA38A00EC6F8C /* CoreData.framework */; };
 		80CD74C015BAA39300EC6F8C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CD74BF15BAA39300EC6F8C /* CoreLocation.framework */; };
-		80D7778A15BBE643007601B5 /* SYMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D7778915BBE643007601B5 /* SYMapViewController.m */; };
+		80D7778A15BBE643007601B5 /* SYLocationMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D7778915BBE643007601B5 /* SYLocationMapController.m */; };
 		80D7778D15BBE757007601B5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D7778C15BBE757007601B5 /* MapKit.framework */; };
+		80EE545015C3C51B00BA99CC /* SYMapTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EE544F15C3C51B00BA99CC /* SYMapTabViewController.m */; };
+		80EE54B415C3C7D500BA99CC /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 80EE54B215C3C7D500BA99CC /* map.png */; };
+		80EE54B515C3C7D500BA99CC /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80EE54B315C3C7D500BA99CC /* map@2x.png */; };
+		80EE54B815C3C91400BA99CC /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 80EE54B615C3C91400BA99CC /* list.png */; };
+		80EE54B915C3C91400BA99CC /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80EE54B715C3C91400BA99CC /* list@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		809F414915BC0522000225D4 /* SYLocationSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYLocationSelectionViewController.h; sourceTree = "<group>"; };
-		809F414A15BC0522000225D4 /* SYLocationSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYLocationSelectionViewController.m; sourceTree = "<group>"; };
+		809F414915BC0522000225D4 /* SYLocationEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYLocationEditorController.h; sourceTree = "<group>"; };
+		809F414A15BC0522000225D4 /* SYLocationEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYLocationEditorController.m; sourceTree = "<group>"; };
 		80CD749615BA88EF00EC6F8C /* GPSLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CD749A15BA88EF00EC6F8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		80CD749C15BA88EF00EC6F8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,16 +43,22 @@
 		80CD74A915BA88EF00EC6F8C /* SYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAppDelegate.h; sourceTree = "<group>"; };
 		80CD74AA15BA88EF00EC6F8C /* SYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAppDelegate.m; sourceTree = "<group>"; };
 		80CD74AD15BA88EF00EC6F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		80CD74AF15BA88EF00EC6F8C /* SYMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYMainViewController.h; sourceTree = "<group>"; };
-		80CD74B015BA88EF00EC6F8C /* SYMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMainViewController.m; sourceTree = "<group>"; };
+		80CD74AF15BA88EF00EC6F8C /* SYListTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYListTabViewController.h; sourceTree = "<group>"; };
+		80CD74B015BA88EF00EC6F8C /* SYListTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYListTabViewController.m; sourceTree = "<group>"; };
 		80CD74B815BAA03C00EC6F8C /* GPSLogger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GPSLogger.xcdatamodel; sourceTree = "<group>"; };
 		80CD74BA15BAA0FE00EC6F8C /* Locations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locations.h; sourceTree = "<group>"; };
 		80CD74BB15BAA0FE00EC6F8C /* Locations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locations.m; sourceTree = "<group>"; };
 		80CD74BD15BAA38A00EC6F8C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		80CD74BF15BAA39300EC6F8C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		80D7778815BBE643007601B5 /* SYMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMapViewController.h; sourceTree = "<group>"; };
-		80D7778915BBE643007601B5 /* SYMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYMapViewController.m; sourceTree = "<group>"; };
+		80D7778815BBE643007601B5 /* SYLocationMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYLocationMapController.h; sourceTree = "<group>"; };
+		80D7778915BBE643007601B5 /* SYLocationMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYLocationMapController.m; sourceTree = "<group>"; };
 		80D7778C15BBE757007601B5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		80EE544E15C3C51B00BA99CC /* SYMapTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMapTabViewController.h; sourceTree = "<group>"; };
+		80EE544F15C3C51B00BA99CC /* SYMapTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYMapTabViewController.m; sourceTree = "<group>"; };
+		80EE54B215C3C7D500BA99CC /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		80EE54B315C3C7D500BA99CC /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
+		80EE54B615C3C91400BA99CC /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		80EE54B715C3C91400BA99CC /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +81,7 @@
 		80CD748B15BA88EF00EC6F8C = {
 			isa = PBXGroup;
 			children = (
+				80EE54B115C3C7C000BA99CC /* Resources */,
 				80D7778C15BBE757007601B5 /* MapKit.framework */,
 				80CD74BF15BAA39300EC6F8C /* CoreLocation.framework */,
 				80CD74BD15BAA38A00EC6F8C /* CoreData.framework */,
@@ -103,12 +115,14 @@
 				80CD74A915BA88EF00EC6F8C /* SYAppDelegate.h */,
 				80CD74AA15BA88EF00EC6F8C /* SYAppDelegate.m */,
 				80CD74AC15BA88EF00EC6F8C /* MainStoryboard.storyboard */,
-				809F414915BC0522000225D4 /* SYLocationSelectionViewController.h */,
-				809F414A15BC0522000225D4 /* SYLocationSelectionViewController.m */,
-				80D7778815BBE643007601B5 /* SYMapViewController.h */,
-				80D7778915BBE643007601B5 /* SYMapViewController.m */,
-				80CD74AF15BA88EF00EC6F8C /* SYMainViewController.h */,
-				80CD74B015BA88EF00EC6F8C /* SYMainViewController.m */,
+				809F414915BC0522000225D4 /* SYLocationEditorController.h */,
+				809F414A15BC0522000225D4 /* SYLocationEditorController.m */,
+				80D7778815BBE643007601B5 /* SYLocationMapController.h */,
+				80D7778915BBE643007601B5 /* SYLocationMapController.m */,
+				80CD74AF15BA88EF00EC6F8C /* SYListTabViewController.h */,
+				80CD74B015BA88EF00EC6F8C /* SYListTabViewController.m */,
+				80EE544E15C3C51B00BA99CC /* SYMapTabViewController.h */,
+				80EE544F15C3C51B00BA99CC /* SYMapTabViewController.m */,
 				80CD74B715BAA03C00EC6F8C /* GPSLogger.xcdatamodeld */,
 				80CD74BA15BAA0FE00EC6F8C /* Locations.h */,
 				80CD74BB15BAA0FE00EC6F8C /* Locations.m */,
@@ -126,6 +140,17 @@
 				80CD74A815BA88EF00EC6F8C /* GPSLogger-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80EE54B115C3C7C000BA99CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80EE54B615C3C91400BA99CC /* list.png */,
+				80EE54B715C3C91400BA99CC /* list@2x.png */,
+				80EE54B215C3C7D500BA99CC /* map.png */,
+				80EE54B315C3C7D500BA99CC /* map@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +207,10 @@
 			files = (
 				80CD74A515BA88EF00EC6F8C /* InfoPlist.strings in Resources */,
 				80CD74AE15BA88EF00EC6F8C /* MainStoryboard.storyboard in Resources */,
+				80EE54B415C3C7D500BA99CC /* map.png in Resources */,
+				80EE54B515C3C7D500BA99CC /* map@2x.png in Resources */,
+				80EE54B815C3C91400BA99CC /* list.png in Resources */,
+				80EE54B915C3C91400BA99CC /* list@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,11 +223,12 @@
 			files = (
 				80CD74A715BA88EF00EC6F8C /* main.m in Sources */,
 				80CD74AB15BA88EF00EC6F8C /* SYAppDelegate.m in Sources */,
-				80CD74B115BA88EF00EC6F8C /* SYMainViewController.m in Sources */,
+				80CD74B115BA88EF00EC6F8C /* SYListTabViewController.m in Sources */,
 				80CD74B915BAA03C00EC6F8C /* GPSLogger.xcdatamodeld in Sources */,
 				80CD74BC15BAA0FE00EC6F8C /* Locations.m in Sources */,
-				80D7778A15BBE643007601B5 /* SYMapViewController.m in Sources */,
-				809F414B15BC0522000225D4 /* SYLocationSelectionViewController.m in Sources */,
+				80D7778A15BBE643007601B5 /* SYLocationMapController.m in Sources */,
+				809F414B15BC0522000225D4 /* SYLocationEditorController.m in Sources */,
+				80EE545015C3C51B00BA99CC /* SYMapTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SYLocationSelectionViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface SYLocationEditorController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSNumber *latitude;
 @property (nonatomic, strong) NSNumber *longtitude;

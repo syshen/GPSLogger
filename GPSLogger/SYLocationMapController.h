@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SYMapViewController : UIViewController
+@interface SYLocationMapController : UIViewController
 
 @property (nonatomic, strong) NSNumber *latitude;
 @property (nonatomic, strong) NSNumber *longtitude;

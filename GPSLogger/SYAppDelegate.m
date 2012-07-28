@@ -7,7 +7,7 @@
 //
 
 #import "SYAppDelegate.h"
-#import "SYMainViewController.h"
+#import "SYListTabViewController.h"
 
 @implementation SYAppDelegate
 
@@ -19,8 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UINavigationController *mainViewController = (UINavigationController*) self.window.rootViewController;
-    SYMainViewController *syControl = (SYMainViewController*) mainViewController.topViewController;
+    UITabBarController *tabBarController = (UITabBarController*) self.window.rootViewController;
+    UINavigationController *mainViewController = (UINavigationController*) [tabBarController.childViewControllers objectAtIndex:0];
+    SYListTabViewController *syControl = (SYListTabViewController*) mainViewController.topViewController;
     syControl.managedObjectContext = self.managedObjectContext;
     return YES;
 }
