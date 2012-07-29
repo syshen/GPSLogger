@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="33" y="1"/>
         </scene>
-        <!--Location Editor Controller-->
+        <!--Location Editor Controller - Where You Are-->
         <scene sceneID="lJy-Qy-Tfn">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYB-kA-sZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -89,7 +89,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3Fk-HP-Hw6"/>
+                    <navigationItem key="navigationItem" title="Where You Are" id="3Fk-HP-Hw6"/>
                     <connections>
                         <outlet property="actIndicatorView" destination="KXh-Rv-Sbu" id="FeJ-xe-6bc"/>
                         <outlet property="mapView" destination="Z8g-dt-9E9" id="yDp-Ug-0TR"/>
@@ -196,6 +196,31 @@
         <image name="list.png" width="19" height="30"/>
         <image name="map.png" width="30" height="16"/>
     </resources>
+    <classes>
+        <class className="SYListTabViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SYListTabViewController.h"/>
+        </class>
+        <class className="SYLocationEditorController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SYLocationEditorController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="actIndicatorView" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="SYLocationMapController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SYLocationMapController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="SYMapTabViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SYMapTabViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

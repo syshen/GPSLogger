@@ -50,7 +50,6 @@
         region.span = span;
         [self.mapView setRegion:region];
         
-        
         [self dropAnnotationsWithinRegion:region];
     }
 }
@@ -63,7 +62,7 @@
 
 - (Locations *)firstLocation
 {
-    return [[SYDataStore defaultStore] firstLocation];
+    return [[SYDataStore defaultStore] latestRecordedLocation];
 }
 
 - (void) dropAnnotations:(NSArray*)locations
@@ -80,7 +79,16 @@
         SYAnnotation *ann = [[SYAnnotation alloc] initWithCoordinate:coord];
         ann.title = location.name;
         ann.creationDate = location.creationDate;
-        [anns addObject:ann];
+        
+        BOOL dup = NO;
+        for (SYAnnotation *t in self.mapView.annotations) {
+            if (t.coordinate.latitude == coord.latitude && t.coordinate.longitude == coord.longitude) {
+                dup = YES;
+                break;
+            }
+        }
+        if (dup == NO)
+            [anns addObject:ann];
     }
     
     [self.mapView addAnnotations:anns];

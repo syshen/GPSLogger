@@ -8,6 +8,8 @@
 
 #import "SYLocationMapController.h"
 #import <MapKit/MapKit.h>
+#import "SYAnnotation.h"
+#import "SYAnnotationView.h"
 
 @interface SYLocationMapController ()
 
@@ -39,6 +41,30 @@
     span.longitudeDelta = .002;
     region.span = span;
     [self.mapView setRegion:region];
+    
+    CLLocationCoordinate2D coord;
+    coord.latitude = [latitude doubleValue];
+    coord.longitude = [longtitude doubleValue];
+    [self dropAnnotation:coord];
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    static NSString *identifier = @"annotationIdentifier";
+    SYAnnotationView *newView = (SYAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    if (newView == nil) {
+        newView = [[SYAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+    } else {
+        newView.annotation = annotation;
+    }
+    
+    return newView;
+}
+
+- (void) dropAnnotation:(CLLocationCoordinate2D)coord
+{
+    SYAnnotation *ann = [[SYAnnotation alloc] initWithCoordinate:coord];
+    [self.mapView addAnnotation:ann];
 }
 
 - (void)viewDidLoad

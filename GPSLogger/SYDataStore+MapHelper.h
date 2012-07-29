@@ -12,7 +12,7 @@
 
 @interface SYDataStore (MapHelper)
 
-- (Locations*) firstLocation;
+- (Locations*) latestRecordedLocation;
 - (NSArray *) locationsWithinRegion:(CLLocationCoordinate2D) topLeft withBottomRight:(CLLocationCoordinate2D) bottomRight;
 
 @end

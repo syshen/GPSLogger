@@ -230,6 +230,7 @@
 
         mapViewController.latitude = [loc latitude];
         mapViewController.longtitude = [loc longtitude];
+        mapViewController.title = [loc name];
     } else if ([[segue identifier] isEqualToString:@"gotoLocationSelection"]) {
         SYLocationEditorController *locViewController = (SYLocationEditorController*)[segue destinationViewController];
         

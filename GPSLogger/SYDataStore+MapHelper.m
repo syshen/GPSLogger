@@ -11,7 +11,7 @@
 @implementation SYDataStore (MapHelper)
 
 
-- (Locations*) firstLocation
+- (Locations*) latestRecordedLocation
 {
     Locations *_firstLocation = nil;
     
